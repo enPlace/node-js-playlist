@@ -1,6 +1,7 @@
-let counter = function(arr){
-    return "there are " + arr.length + " elements in this array"
+const count= require('./counter.js')
+const counter = count.counter;
+const printer =count.printer;
+console.log(counter([1,2,3,4,5,10]));
 
-}
 
-console.log(counter([1,2,3,4,5,6,7]))
+printer();
