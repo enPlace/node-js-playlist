@@ -1,11 +1,6 @@
-let time = 0; 
+let counter = function(arr){
+    return "there are " + arr.length + " elements in this array"
 
-function counter(){
-    time +=2
-    console.log(time +" seconds have passed")
-    if(time>5){
-        clearInterval(timer)
-        console.log("out of time")
-    }
 }
-let timer = setInterval(counter, 2000)
+
+console.log(counter([1,2,3,4,5,6,7]))
